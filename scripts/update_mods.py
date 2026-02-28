@@ -631,7 +631,7 @@ def update_readme_week(readme_path: Path, week: str) -> tuple[bool, bool, str | 
         return False, False, f"Could not write {readme_path}: {exc}"
 
 
-def build_modinfo_entry(slug: str, readme_fields: dict[str, str], author: str, week: str) -> dict:
+def build_modinfo_entry(slug: str, readme_fields: dict[str, str], author: str) -> dict:
     """Build one modinfo.json entry for EXMODZ distribution."""
     exmodz_url = (
         f"https://raw.githubusercontent.com/{GITHUB_OWNER}/{GITHUB_REPO}/"
@@ -642,7 +642,7 @@ def build_modinfo_entry(slug: str, readme_fields: dict[str, str], author: str, w
         "name": readme_fields["name"],
         "author": author,
         "version": readme_fields["version"],
-        "week": week,
+        "compatibility": "All",
         "description": readme_fields["description"],
         "files": {
             "exmodz": exmodz_url,
@@ -937,7 +937,7 @@ def main() -> int:
                 f"No mod README/data context found for EXMODZ archive '{exmodz_file.name}', skipping"
             )
             continue
-        entries.append(build_modinfo_entry(slug, context.readme, author, week))
+        entries.append(build_modinfo_entry(slug, context.readme, author))
 
     modinfo_payload = {
         "mods": entries,
