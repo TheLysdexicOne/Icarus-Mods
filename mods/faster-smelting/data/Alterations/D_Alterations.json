@@ -1,0 +1,25 @@
+{
+  "RowStruct": "/Script/Icarus.Alteration",
+  "Defaults": {
+    "DisplayName": "",
+    "Icon": "None",
+    "Description": "",
+    "RankIcon": "None",
+    "Stats": {}
+  },
+  "GenerateEnum": true,
+  "Rows": [
+    {
+      "Name": "SmeltingSpeed_1",
+      "Stats": {
+        "(Value=\"BaseSmeltingSpeed_+%\")": 50
+      }
+    },
+    {
+      "Name": "SmeltingSpeed_2",
+      "Stats": {
+        "(Value=\"BaseSmeltingSpeed_+%\")": 100
+      }
+    }
+  ]
+}

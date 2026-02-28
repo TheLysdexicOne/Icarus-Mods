@@ -1,7 +1,7 @@
 # Mod Info
 
-**Name**: Reduce Killcam Time
-**mod_slug**: `max-killcam-time`
+**Name**: Lysdexic's Reduce Killcam Time
+**mod_slug**: `reduce-killcam-time`
 **Author**: TheLysdexicOne
 **Version**: 1.0
 **Description**: This mod is an attempt to lessen the time spent watching the killcam. Sometimes when a creature falls weirdly, the kill cam can last up to 4.5 seconds before releasing control back to the player. This mod tries to reduce that to 1 second.

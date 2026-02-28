@@ -15,21 +15,25 @@
       ]
     },
     "level-cap-250": {
-      "updated_at": "2026-02-28T11:45:34.140873",
+      "updated_at": "2026-02-28T17:31:14.128761",
       "baseline_folder": "221.2",
       "files": [
+        "Character/C_PlayerTalentGrowth.uasset",
+        "Character/C_PlayerTalentGrowth.uexp",
+        "Character/C_SoloTalentGrowth.uasset",
+        "Character/C_SoloTalentGrowth.uexp",
         "Character/D_CharacterGrowth.json"
       ]
     },
     "max-killcam-time": {
-      "updated_at": "2026-02-28T11:45:41.131648",
+      "updated_at": "2026-02-28T17:15:08.978988",
       "baseline_folder": "221.2",
       "files": [
         "CriticalHit/D_CriticalHitSetup.json"
       ]
     },
     "pouches-12-slot": {
-      "updated_at": "2026-02-28T11:47:10.674714",
+      "updated_at": "2026-02-28T17:15:23.788250",
       "baseline_folder": "221.2",
       "files": [
         "Inventory/D_InventoryInfo.json",
@@ -37,10 +41,60 @@
       ]
     },
     "skinning-fast-animation": {
-      "updated_at": "2026-02-28T11:48:04.475644",
+      "updated_at": "2026-02-28T17:15:35.100328",
       "baseline_folder": "221.2",
       "files": [
         "Items/D_ItemsStatic.json"
+      ]
+    },
+    "faster-smelting-talent": {
+      "updated_at": "2026-02-28T17:18:05.243531",
+      "baseline_folder": "221.2",
+      "files": [
+        "Alterations/D_Alterations.json"
+      ]
+    },
+    "fast-foliage-harvest": {
+      "updated_at": "2026-02-28T17:31:12.241676",
+      "baseline_folder": "221.2",
+      "files": [
+        "Interactions/D_Interactions.json"
+      ]
+    },
+    "faster-smelting": {
+      "updated_at": "2026-02-28T17:31:13.513952",
+      "baseline_folder": "221.2",
+      "files": [
+        "Alterations/D_Alterations.json"
+      ]
+    },
+    "small-pouches-12": {
+      "updated_at": "2026-02-28T17:31:15.472893",
+      "baseline_folder": "221.2",
+      "files": [
+        "Inventory/D_InventoryInfo.json",
+        "Traits/D_Itemable.json"
+      ]
+    },
+    "faster-skinning": {
+      "updated_at": "2026-02-28T17:31:12.901690",
+      "baseline_folder": "221.2",
+      "files": [
+        "Items/D_ItemsStatic.json"
+      ]
+    },
+    "reduce-killcam-time": {
+      "updated_at": "2026-02-28T17:31:14.733001",
+      "baseline_folder": "221.2",
+      "files": [
+        "CriticalHit/D_CriticalHitSetup.json"
+      ]
+    },
+    "storage-increase": {
+      "updated_at": "2026-02-28T17:31:16.107856",
+      "baseline_folder": "221.2",
+      "files": [
+        "Alterations/D_Alterations.json"
       ]
     }
   }

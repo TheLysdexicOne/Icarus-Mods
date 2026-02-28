@@ -5,15 +5,15 @@ For each mod in the mods/ directory, creates a .pak file in the mods-pak/ direct
 
 import subprocess
 import sys
-import os
 from pathlib import Path
 import tempfile
 
 
 # Configuration
-UNREALPAK_PATH = r"UnrealPak\Engine\Binaries\Win64\UnrealPak.exe"
-MODS_DIR = "mods"
-OUTPUT_DIR = "mods-pak"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+UNREALPAK_PATH = ROOT_DIR / "UnrealPak" / "Engine" / "Binaries" / "Win64" / "UnrealPak.exe"
+MODS_DIR = ROOT_DIR / "mods"
+OUTPUT_DIR = ROOT_DIR / "mods-pak"
 
 
 def validate_prerequisites() -> bool:
@@ -23,12 +23,12 @@ def validate_prerequisites() -> bool:
         bool: True if all prerequisites are valid, False otherwise.
     """
     # Check UnrealPak.exe
-    if not Path(UNREALPAK_PATH).exists():
+    if not UNREALPAK_PATH.exists():
         print(f"Error: UnrealPak.exe not found at {UNREALPAK_PATH}", file=sys.stderr)
         return False
 
     # Check mods directory exists
-    if not Path(MODS_DIR).exists():
+    if not MODS_DIR.exists():
         print(f"Error: mods directory not found at {MODS_DIR}", file=sys.stderr)
         return False
 
@@ -41,8 +41,7 @@ def get_mod_directories() -> list:
     Returns:
         list: List of mod directory paths.
     """
-    mods_path = Path(MODS_DIR)
-    mod_dirs = [d for d in mods_path.iterdir() if d.is_dir()]
+    mod_dirs = [d for d in MODS_DIR.iterdir() if d.is_dir()]
     return sorted(mod_dirs)
 
 
@@ -63,7 +62,7 @@ def create_response_file(mod_dir: Path, temp_dir: Path) -> str:
 
     # Response file format for UnrealPak
     # Each line is: "source_path" "mount_path"
-    with open(response_file, "w") as f:
+    with response_file.open("w", encoding="utf-8") as f:
         if data_dir.exists():
             for item in data_dir.rglob("*"):
                 if item.is_file():
@@ -91,10 +90,10 @@ def create_pak_file(mod_dir: Path, mod_name: str) -> bool:
     print(f"Creating pak for: {mod_name}")
 
     # Create output directory if it doesn't exist
-    Path(OUTPUT_DIR).mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(exist_ok=True)
 
     # Output pak file path (use absolute path for UnrealPak)
-    output_pak = (Path(OUTPUT_DIR) / f"{mod_name}.pak").absolute()
+    output_pak = (OUTPUT_DIR / f"{mod_name}.pak").absolute()
 
     # Create temporary directory for response file
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -112,7 +111,7 @@ def create_pak_file(mod_dir: Path, mod_name: str) -> bool:
 
             # Run UnrealPak
             result = subprocess.run(
-                [UNREALPAK_PATH, str(output_pak), f"-Create={response_file}"],
+                [str(UNREALPAK_PATH), str(output_pak), f"-Create={response_file}"],
                 capture_output=True,
                 text=True,
                 timeout=600,  # 10 minute timeout
@@ -136,6 +135,27 @@ def create_pak_file(mod_dir: Path, mod_name: str) -> bool:
         except Exception as e:
             print(f"  Error: Failed to create pak: {e}", file=sys.stderr)
             return False
+
+
+def create_pak_for_mod(mod_name: str) -> tuple[bool, str | None]:
+    """Create a .pak for one mod and return output path on success."""
+    if not validate_prerequisites():
+        return False, None
+
+    mod_dir = MODS_DIR / mod_name
+    if not mod_dir.exists() or not mod_dir.is_dir():
+        print(f"Error: Mod not found: {mod_name}", file=sys.stderr)
+        return False, None
+
+    if not (mod_dir / "data").exists():
+        print(f"Error: Mod data directory not found: {mod_dir / 'data'}", file=sys.stderr)
+        return False, None
+
+    success = create_pak_file(mod_dir, mod_name)
+    if not success:
+        return False, None
+
+    return True, str(OUTPUT_DIR / f"{mod_name}.pak")
 
 
 def main():

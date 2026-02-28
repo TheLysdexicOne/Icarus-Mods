@@ -1,7 +1,7 @@
 # Mod Info
 
-**Name**: Small Pouch - 12 Slots
-**mod_slug**: `pouches-12-slot`
+**Name**: Lysdexic's Small Pouches - 12
+**mod_slug**: `small-pouches-12`
 **Author**: TheLysdexicOne
 **Version**: 1.0
 **Description**: This mod increases the number of slots in small pouches from 6 -> 12.
@@ -14,4 +14,4 @@
 ## File List
 
 - Inventory/D_InventoryInfo.json
-- Traits/Itemable.json
+- Traits/D_Itemable.json

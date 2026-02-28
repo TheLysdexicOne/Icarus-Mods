@@ -67,14 +67,14 @@ def main():
 **Version**: 1.0
 **Description**: A brief description of the mod and its features.
 **Date Created**: `{date_created}`
-**Date Updated**: `This will be updated when stage_mods.py is run`
+**Date Updated**: ``
 **Week Compatibility**: `{week_num}`
 **Image URL**:
 **Readme URL**: {readme_url}
 
 ## File List
 
-- This will be updated with `stage_mods.py`
+- 
 """
         with open(readme_path, "w") as f:
             f.write(readme_content)

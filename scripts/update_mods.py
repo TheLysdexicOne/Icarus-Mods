@@ -7,6 +7,7 @@ can optionally launch Notepad++ Compare for manual review.
 After successful validation, write mode updates:
 - EXMOD metadata fields inside each .EXMODZ archive
 - Week Compatibility in each mod README
+- Date Updated in each mod README when that mod changed in this run
 - Top-level modinfo.json entries for EXMODZ distribution
 """
 
@@ -15,6 +16,7 @@ from __future__ import annotations
 import argparse
 import copy
 import difflib
+from datetime import datetime
 import json
 import subprocess
 import sys
@@ -593,8 +595,18 @@ def rewrite_exmodz_entry(
         return False, f"Invalid EXMODZ zip archive {exmodz_path}: {exc}"
 
 
-def update_readme_week(readme_path: Path, week: str) -> tuple[bool, bool, str | None]:
-    """Update '**Week Compatibility**' value in README.
+def update_readme_field(
+    readme_path: Path,
+    field_label: str,
+    value: str,
+    *,
+    append_if_missing: bool,
+    append_with_backticks: bool,
+) -> tuple[bool, bool, str | None]:
+    """Update a README metadata field line.
+
+    Field format is expected to be: **Field Label**: value
+    Backticks are preserved when the existing value is wrapped.
 
     Returns:
         (success, changed, error)
@@ -604,20 +616,31 @@ def update_readme_week(readme_path: Path, week: str) -> tuple[bool, bool, str | 
     except OSError as exc:
         return False, False, f"Could not read {readme_path}: {exc}"
 
-    pattern = re.compile(
-        r"^(\*\*Week Compatibility\*\*:\s*)(`?)([^`\n]*?)(`?)\s*$",
-        re.MULTILINE,
-    )
+    escaped_label = re.escape(field_label)
+    pattern = re.compile(rf"^(\*\*{escaped_label}\*\*:\s*)(`?)([^`\n]*?)(`?)\s*$", re.MULTILINE)
 
     match = pattern.search(content)
     if not match:
-        return False, False, f"Week Compatibility field not found in {readme_path}"
+        if not append_if_missing:
+            return False, False, f"{field_label} field not found in {readme_path}"
+
+        appended_value = f"`{value}`" if append_with_backticks else value
+        prefix = "" if not content or content.endswith("\n") else "\n"
+        new_content = f"{content}{prefix}**{field_label}**: {appended_value}\n"
+        changed = new_content != content
+        if not changed:
+            return True, False, None
+        try:
+            readme_path.write_text(new_content, encoding="utf-8")
+            return True, True, None
+        except OSError as exc:
+            return False, False, f"Could not write {readme_path}: {exc}"
 
     prefix, left_tick, _, right_tick = match.groups()
     if not left_tick and not right_tick:
-        replacement = f"{prefix}{week}"
+        replacement = f"{prefix}{value}"
     else:
-        replacement = f"{prefix}`{week}`"
+        replacement = f"{prefix}`{value}`"
 
     new_content = pattern.sub(replacement, content, count=1)
     changed = new_content != content
@@ -629,6 +652,22 @@ def update_readme_week(readme_path: Path, week: str) -> tuple[bool, bool, str | 
         return True, True, None
     except OSError as exc:
         return False, False, f"Could not write {readme_path}: {exc}"
+
+
+def update_readme_week(readme_path: Path, week: str) -> tuple[bool, bool, str | None]:
+    """Update '**Week Compatibility**' value in README."""
+    return update_readme_field(
+        readme_path,
+        "Week Compatibility",
+        week,
+        append_if_missing=False,
+        append_with_backticks=False,
+    )
+
+
+def format_readme_date_updated() -> str:
+    """Format Date Updated using project README convention."""
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S EST")
 
 
 def build_modinfo_entry(slug: str, readme_fields: dict[str, str], author: str) -> dict:
@@ -689,7 +728,7 @@ def main() -> int:
     parser.add_argument(
         "--write",
         action="store_true",
-        help="Apply updates to EXMODZ, README week values, and modinfo.json",
+        help="Apply updates to EXMODZ, README week/date values, and modinfo.json",
     )
     parser.add_argument(
         "--with-compare",
@@ -743,6 +782,7 @@ def main() -> int:
     warnings: list[str] = []
 
     validated_archives: dict[str, ArchiveContext] = {}
+    skipped_wip_mods = 0
 
     changed_file_count = 0
     unchanged_file_count = 0
@@ -758,6 +798,13 @@ def main() -> int:
             warnings.append(f"{slug}: {issue}")
 
         contexts.append(context)
+
+        if not context.exmodz_path.exists():
+            warnings.append(
+                f"{slug}: Missing EXMODZ archive ({context.exmodz_path.name}) - treated as work-in-progress, skipping"
+            )
+            skipped_wip_mods += 1
+            continue
 
         archive_context, archive_error = read_exmod_archive(context.exmodz_path)
         if archive_error:
@@ -885,7 +932,8 @@ def main() -> int:
 
     print(
         f"\nValidation complete: {len(contexts)} mod(s), "
-        f"{changed_file_count} changed file(s), {unchanged_file_count} unchanged file(s)"
+        f"{changed_file_count} changed file(s), {unchanged_file_count} unchanged file(s), "
+        f"{skipped_wip_mods} work-in-progress mod(s) skipped"
     )
 
     if not args.write:
@@ -894,7 +942,8 @@ def main() -> int:
 
     print("\n[2/3] Applying EXMODZ + README updates...")
     exmod_updates = 0
-    readme_updates = 0
+    readme_week_updates = 0
+    readme_date_updates = 0
 
     for context in contexts:
         archive_context = validated_archives.get(context.slug)
@@ -919,10 +968,27 @@ def main() -> int:
             print(f"Error: {readme_error}", file=sys.stderr)
             return 1
         if changed:
-            readme_updates += 1
+            readme_week_updates += 1
+
+        mod_changed_this_run = exmod_changed or changed
+        if mod_changed_this_run:
+            date_updated_value = format_readme_date_updated()
+            success, date_changed, readme_error = update_readme_field(
+                context.readme_path,
+                "Date Updated",
+                date_updated_value,
+                append_if_missing=True,
+                append_with_backticks=True,
+            )
+            if not success:
+                print(f"Error: {readme_error}", file=sys.stderr)
+                return 1
+            if date_changed:
+                readme_date_updates += 1
 
     print(f"Updated EXMODZ archives: {exmod_updates}")
-    print(f"Updated README week fields: {readme_updates}")
+    print(f"Updated README week fields: {readme_week_updates}")
+    print(f"Updated README Date Updated fields: {readme_date_updates}")
 
     print("\n[3/3] Regenerating modinfo.json...")
     entries: list[dict] = []

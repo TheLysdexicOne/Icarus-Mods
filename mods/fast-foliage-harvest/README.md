@@ -1,7 +1,7 @@
 # Mod Info
 
-**Name**: Fast Resource Collection
-**mod_slug**: `fast-resource-collection`
+**Name**: Lysdexic's Fast Foliage Harvest
+**mod_slug**: `fast-foliage-harvest`
 **Author**: TheLysdexicOne
 **Version**: 1.0
 **Description**: By default there is a 0.5 second delay between collecting foliage by hand. This mod lessens that delay to 0.1 seconds.
@@ -13,4 +13,4 @@
 
 ## File List
 
-- Traits/D_Itemable.json
+- Interactions/D_Interactions.json

@@ -1,7 +1,7 @@
 # Mod Info
 
-**Name**: Fast Skinning
-**mod_slug**: `skinning-fast-animation`
+**Name**: Lysdexic's Faster Skinning
+**mod_slug**: `faster-skinning`
 **Author**: TheLysdexicOne
 **Version**: 1.0
 **Description**: Adds a skinning modifier to all knives to increase skinning speed by 500%.

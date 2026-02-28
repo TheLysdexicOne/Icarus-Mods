@@ -1,0 +1,37 @@
+{
+  "RowStruct": "/Script/Icarus.Alteration",
+  "Defaults": {
+    "DisplayName": "",
+    "Icon": "None",
+    "Description": "",
+    "RankIcon": "None",
+    "Stats": {}
+  },
+  "GenerateEnum": true,
+  "Rows": [
+    {
+      "Name": "Storage_1",
+      "Stats": {
+        "(Value=\"BaseGenericSlots_+\")": 5
+      }
+    },
+    {
+      "Name": "Storage_2",
+      "Stats": {
+        "(Value=\"BaseGenericSlots_+\")": 10
+      }
+    },
+    {
+      "Name": "Storage_3",
+      "Stats": {
+        "(Value=\"BaseGenericSlots_+\")": 15
+      }
+    },
+    {
+      "Name": "Storage_4",
+      "Stats": {
+        "(Value=\"BaseGenericSlots_+\")": 20
+      }
+    }
+  ]
+}
