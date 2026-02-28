@@ -39,15 +39,15 @@ def main():
         # Create README.md with template
         readme_path = os.path.join(mod_dir, "README.md")
         readme_url = f"`https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/{kebab_name}/README.md`"
-        
+
         # Get current date/time in EST (offset by -5 hours from UTC)
         est_offset = timedelta(hours=-5)
         date_created = (datetime.now() + est_offset).strftime("%Y-%m-%d %H:%M:%S EST")
-        
+
         # Get current week number
         week = get_week()
         week_num = week.split()[-1] if week else "Unknown"
-        
+
         readme_content = f"""# Mod Info
 
 **Name**:
