@@ -355,7 +355,9 @@ def apply_mod_to_baseline(
     return copy.deepcopy(mod_value)
 
 
-def build_section_compare_payloads(baseline_data: object, patched_data: object) -> tuple[object, object]:
+def build_section_compare_payloads(
+    baseline_data: object, patched_data: object
+) -> tuple[object, object]:
     """Build compare payloads focused on changed sections.
 
     For Rows lists, include full row dictionaries for changed Name entries.
