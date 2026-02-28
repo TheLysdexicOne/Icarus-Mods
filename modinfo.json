@@ -1,0 +1,16 @@
+{
+  "mods": [
+    {
+      "name": "Lysdexic's Level 250 Cap",
+      "author": "Lysdexic",
+      "version": "1",
+      "week": "221",
+      "description": "This mod increases the level cap to 250. Current number of talents required to max talent trees is 599. This mod adjust the talent curve beyond level 50 to give 586 talent points to account for the 13 gained from missions.",
+      "files": {
+        "pak": "https://github.com/TheLysdexicOne/Icarus-Mods/mods/level-cap-250.pak"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/README.md"
+    }
+  ]
+}
