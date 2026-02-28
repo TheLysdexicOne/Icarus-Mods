@@ -1,6 +1,6 @@
 # Mod Info
 
-**Name**: Increase Small Pouch Slots to 12
+**Name**: Small Pouch - 12 Slots
 **mod_slug**: `pouches-12-slot`
 **Author**: TheLysdexicOne
 **Version**: 1.0
@@ -13,4 +13,5 @@
 
 ## File List
 
-- This will be updated with `stage_mods.py`
+- Inventory/D_InventoryInfo.json
+- Traits/Itemable.json

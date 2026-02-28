@@ -1,0 +1,21 @@
+{
+  "RowStruct": "/Script/Icarus.InteractData",
+  "Defaults": {
+    "Behaviour": "None",
+    "AuthorityType": "ServerOnly",
+    "InteractCooldown": 0.5,
+    "InteractionText": "",
+    "InteractStaminaCost": {
+      "RowName": "None",
+      "DataTableName": "D_StaminaActionCosts"
+    },
+    "bShowInteractionWhenUnavailable": false,
+    "bCanPerformInteractionWhileSeated": false
+  },
+  "Rows": [
+    {
+      "Name": "Harvest_Resource",
+      "InteractCooldown": 0.1
+    }
+  ]
+}

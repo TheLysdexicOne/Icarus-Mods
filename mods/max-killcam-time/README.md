@@ -13,4 +13,4 @@
 
 ## File List
 
-- This will be updated with `stage_mods.py`
+- CriticalHit/D_CriticalHitSetup.json

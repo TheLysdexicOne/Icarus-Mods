@@ -1,7 +1,8 @@
 import os
 import re
+import json
 from datetime import datetime, timedelta
-from get_week import get_week
+from pathlib import Path
 
 
 def to_kebab_case(name: str) -> str:
@@ -9,6 +10,17 @@ def to_kebab_case(name: str) -> str:
     name = re.sub(r"[^a-zA-Z0-9]+", "-", name)
     # Remove leading and trailing hyphens, and convert to lowercase
     return name.strip("-").lower()
+
+
+def get_week_from_metadata() -> str:
+    metadata_file = Path(__file__).resolve().parent.parent / "metadata.json"
+    try:
+        with metadata_file.open("r", encoding="utf-8") as f:
+            metadata = json.load(f)
+        week = metadata.get("week") if isinstance(metadata, dict) else None
+        return str(week) if week else "Unknown"
+    except (OSError, json.JSONDecodeError):
+        return "Unknown"
 
 
 def main():
@@ -44,9 +56,8 @@ def main():
         est_offset = timedelta(hours=-5)
         date_created = (datetime.now() + est_offset).strftime("%Y-%m-%d %H:%M:%S EST")
 
-        # Get current week number
-        week = get_week()
-        week_num = week.split()[-1] if week else "Unknown"
+        # Get current week number from metadata
+        week_num = get_week_from_metadata()
 
         readme_content = f"""# Mod Info
 

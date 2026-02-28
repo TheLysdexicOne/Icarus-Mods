@@ -1,0 +1,12 @@
+{
+  "RowStruct": "/Script/Icarus.CriticalHitSetup",
+  "Defaults": {
+    "FinishTime": 0.25
+  },
+  "Rows": [
+    {
+      "Name": "Example",
+      "FinishTime": 0.5
+    }
+  ]
+}

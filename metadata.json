@@ -3,5 +3,45 @@
   "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/README.md",
   "total_mods": 4,
   "week": "221",
-  "last_data_sync": "2026-02-28T01:28:48.078706"
+  "last_data_sync": "2026-02-28T10:15:09.118266",
+  "game_version": "2.4.1.149492",
+  "latest_data_folder": "221.2",
+  "mod_file_index": {
+    "fast-resource-collection": {
+      "updated_at": "2026-02-28T11:45:20.235109",
+      "baseline_folder": "221.2",
+      "files": [
+        "Interactions/D_Interactions.json"
+      ]
+    },
+    "level-cap-250": {
+      "updated_at": "2026-02-28T11:45:34.140873",
+      "baseline_folder": "221.2",
+      "files": [
+        "Character/D_CharacterGrowth.json"
+      ]
+    },
+    "max-killcam-time": {
+      "updated_at": "2026-02-28T11:45:41.131648",
+      "baseline_folder": "221.2",
+      "files": [
+        "CriticalHit/D_CriticalHitSetup.json"
+      ]
+    },
+    "pouches-12-slot": {
+      "updated_at": "2026-02-28T11:47:10.674714",
+      "baseline_folder": "221.2",
+      "files": [
+        "Inventory/D_InventoryInfo.json",
+        "Traits/D_Itemable.json"
+      ]
+    },
+    "skinning-fast-animation": {
+      "updated_at": "2026-02-28T11:48:04.475644",
+      "baseline_folder": "221.2",
+      "files": [
+        "Items/D_ItemsStatic.json"
+      ]
+    }
+  }
 }
