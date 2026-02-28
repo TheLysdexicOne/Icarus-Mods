@@ -1,16 +1,64 @@
 {
   "mods": [
     {
+      "name": "Fast Resource Collection",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "week": "221",
+      "description": "By default there is a 0.5 second delay between collecting foliage by hand. This mod lessens that delay to 0.1 seconds.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/fast-resource-collection.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/fast-resource-collection/README.md"
+    },
+    {
       "name": "Lysdexic's Level 250 Cap",
-      "author": "Lysdexic",
-      "version": "1",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
       "week": "221",
       "description": "This mod increases the level cap to 250. Current number of talents required to max talent trees is 599. This mod adjust the talent curve beyond level 50 to give 586 talent points to account for the 13 gained from missions.",
       "files": {
-        "pak": "https://github.com/TheLysdexicOne/Icarus-Mods/mods/level-cap-250.pak"
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/level-cap-250.EXMODZ"
       },
       "imageURL": "",
-      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/README.md"
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/level-cap-250/README.md"
+    },
+    {
+      "name": "Reduce Killcam Time",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "week": "221",
+      "description": "This mod is an attempt to lessen the time spent watching the killcam. Sometimes when a creature falls weirdly, the kill cam can last up to 4.5 seconds before releasing control back to the player. This mod tries to reduce that to 1 second.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/max-killcam-time.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/max-killcam-time/README.md"
+    },
+    {
+      "name": "Small Pouch - 12 Slots",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "week": "221",
+      "description": "This mod increases the number of slots in small pouches from 6 -> 12.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/pouches-12-slot.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/pouches-12-slot/README.md"
+    },
+    {
+      "name": "Fast Skinning",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "week": "221",
+      "description": "Adds a skinning modifier to all knives to increase skinning speed by 500%.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/skinning-fast-animation.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/skinning-fast-animation/README.md"
     }
   ]
 }
