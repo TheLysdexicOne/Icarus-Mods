@@ -2,10 +2,10 @@
   "author": "TheLysdexicOne",
   "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/README.md",
   "total_mods": 4,
-  "week": "221",
-  "last_data_sync": "2026-03-08T17:52:02.857623",
-  "game_version": "3.0.0.150086",
-  "latest_data_folder": "221.3",
+  "week": "223",
+  "last_data_sync": "2026-03-14T10:00:00.621898",
+  "game_version": "3.0.1.150228",
+  "latest_data_folder": "223",
   "mod_file_index": {
     "fast-resource-collection": {
       "updated_at": "2026-02-28T11:45:20.235109",
@@ -95,6 +95,13 @@
       "baseline_folder": "221.2",
       "files": [
         "Alterations/D_Alterations.json"
+      ]
+    },
+    "free-beacons": {
+      "updated_at": "2026-03-14T10:02:02.686361",
+      "baseline_folder": "223",
+      "files": [
+        "Crafting/D_ProcessorRecipes.json"
       ]
     }
   }

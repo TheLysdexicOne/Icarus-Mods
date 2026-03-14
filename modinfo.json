@@ -1,16 +1,52 @@
 {
   "mods": [
     {
-      "name": "Fast Resource Collection",
+      "name": "Lysdexic's Fast Foliage Harvest",
       "author": "TheLysdexicOne",
       "version": "1.0",
       "compatibility": "All",
       "description": "By default there is a 0.5 second delay between collecting foliage by hand. This mod lessens that delay to 0.1 seconds.",
       "files": {
-        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/fast-resource-collection.EXMODZ"
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/fast-foliage-harvest.EXMODZ"
       },
       "imageURL": "",
       "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/fast-resource-collection/README.md"
+    },
+    {
+      "name": "Lysdexic's Faster Skinning",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "compatibility": "All",
+      "description": "Adds a skinning modifier to all knives to increase skinning speed by 500%.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/faster-skinning.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/skinning-fast-animation/README.md"
+    },
+    {
+      "name": "Lysdexic's Faster Smelting",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "compatibility": "All",
+      "description": "In the building talent tree, there is the talent 'Stoking the Flames'. This talent adds an alteration to all furnaces crafted. This mod changes those alteration values from 10 -> 50 and 15 -> 100. This ensures furnaces do not need to be replaced for this mod to take effect.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/faster-smelting.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/faster-smelting-talent/README.md"
+    },
+    {
+      "name": "Lysdexic's Free Beacons",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "compatibility": "All",
+      "description": "Makes beacons free. In my opinion, we should just have a map marker system and forego beacons entirely. Until that is implemented, this is my solution.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/free-beacons.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/cheaper-beacons/README.md"
     },
     {
       "name": "Lysdexic's Level 250 Cap",
@@ -25,40 +61,40 @@
       "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/level-cap-250/README.md"
     },
     {
-      "name": "Reduce Killcam Time",
+      "name": "Lysdexic's Reduce Killcam Time",
       "author": "TheLysdexicOne",
       "version": "1.0",
       "compatibility": "All",
       "description": "This mod is an attempt to lessen the time spent watching the killcam. Sometimes when a creature falls weirdly, the kill cam can last up to 4.5 seconds before releasing control back to the player. This mod tries to reduce that to 1 second.",
       "files": {
-        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/max-killcam-time.EXMODZ"
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/reduce-killcam-time.EXMODZ"
       },
       "imageURL": "",
       "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/max-killcam-time/README.md"
     },
     {
-      "name": "Small Pouch - 12 Slots",
+      "name": "Lysdexic's Small Pouches - 12",
       "author": "TheLysdexicOne",
       "version": "1.0",
       "compatibility": "All",
       "description": "This mod increases the number of slots in small pouches from 6 -> 12.",
       "files": {
-        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/pouches-12-slot.EXMODZ"
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/small-pouches-12.EXMODZ"
       },
       "imageURL": "",
       "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/pouches-12-slot/README.md"
     },
     {
-      "name": "Fast Skinning",
+      "name": "Lysdexic's Storage Increase",
       "author": "TheLysdexicOne",
       "version": "1.0",
       "compatibility": "All",
-      "description": "Adds a skinning modifier to all knives to increase skinning speed by 500%.",
+      "description": "In the building talent tree, there is the talent 'Extra Space'. This talent adds extra storage based on the number of talent points dedicated to it. This mod changes those alteration values from 3->5, 5->10, 8->15, 10->20. This ensures furnaces do not need to be replaced for this mod to take effect.",
       "files": {
-        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/skinning-fast-animation.EXMODZ"
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/storage-increase.EXMODZ"
       },
       "imageURL": "",
-      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/skinning-fast-animation/README.md"
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/storage-increase/README.md"
     }
   ]
 }
