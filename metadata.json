@@ -98,10 +98,11 @@
       ]
     },
     "free-beacons": {
-      "updated_at": "2026-03-14T10:10:23.642702",
+      "updated_at": "2026-03-14T11:04:30.290915",
       "baseline_folder": "223",
       "files": [
-        "Crafting/D_ProcessorRecipes.json"
+        "Crafting/D_ProcessorRecipes.json",
+        "Traits/D_Itemable.json"
       ]
     }
   }

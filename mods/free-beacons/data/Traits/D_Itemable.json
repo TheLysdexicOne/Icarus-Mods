@@ -1,0 +1,21 @@
+{
+  "RowStruct": "/Script/Icarus.ItemableData",
+  "Defaults": {
+    "Behaviour": "None",
+    "DisplayName": "",
+    "Icon": "None",
+    "Override_Glow_Icon": "None",
+    "Description": "",
+    "FlavorText": "",
+    "FieldGuideKeywords": [],
+    "Weight": 0,
+    "bAllowZeroWeight": false,
+    "MaxStack": 1
+  },
+  "Rows": [
+    {
+      "Name": "Item_Portable_Beacon",
+      "Weight": 100
+    }
+  ]
+}

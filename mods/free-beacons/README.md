@@ -14,3 +14,4 @@
 ## File List
 
 - Crafting/D_ProcessorRecipes.json
+- Traits/D_Itemable.json
