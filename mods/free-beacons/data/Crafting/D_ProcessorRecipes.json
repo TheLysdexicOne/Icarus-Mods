@@ -75,6 +75,7 @@
   "Rows": [
     {
       "Name": "Portable_Beacon",
+      "RequiredMillijoules": 100,
       "RecipeSets": [
         {
           "RowName": "Character",
