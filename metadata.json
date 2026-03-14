@@ -3,9 +3,9 @@
   "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/README.md",
   "total_mods": 4,
   "week": "221",
-  "last_data_sync": "2026-02-28T10:15:09.118266",
-  "game_version": "2.4.1.149492",
-  "latest_data_folder": "221.2",
+  "last_data_sync": "2026-03-08T17:52:02.857623",
+  "game_version": "3.0.0.150086",
+  "latest_data_folder": "221.3",
   "mod_file_index": {
     "fast-resource-collection": {
       "updated_at": "2026-02-28T11:45:20.235109",
@@ -15,7 +15,7 @@
       ]
     },
     "level-cap-250": {
-      "updated_at": "2026-02-28T17:31:14.128761",
+      "updated_at": "2026-03-01T09:30:25.049435",
       "baseline_folder": "221.2",
       "files": [
         "Character/C_PlayerTalentGrowth.uasset",
@@ -55,21 +55,21 @@
       ]
     },
     "fast-foliage-harvest": {
-      "updated_at": "2026-02-28T17:31:12.241676",
+      "updated_at": "2026-03-01T09:30:23.772384",
       "baseline_folder": "221.2",
       "files": [
         "Interactions/D_Interactions.json"
       ]
     },
     "faster-smelting": {
-      "updated_at": "2026-02-28T17:31:13.513952",
+      "updated_at": "2026-03-01T09:08:48.108057",
       "baseline_folder": "221.2",
       "files": [
         "Alterations/D_Alterations.json"
       ]
     },
     "small-pouches-12": {
-      "updated_at": "2026-02-28T17:31:15.472893",
+      "updated_at": "2026-03-01T09:30:26.301214",
       "baseline_folder": "221.2",
       "files": [
         "Inventory/D_InventoryInfo.json",
@@ -77,21 +77,21 @@
       ]
     },
     "faster-skinning": {
-      "updated_at": "2026-02-28T17:31:12.901690",
+      "updated_at": "2026-03-01T09:30:24.427226",
       "baseline_folder": "221.2",
       "files": [
         "Items/D_ItemsStatic.json"
       ]
     },
     "reduce-killcam-time": {
-      "updated_at": "2026-02-28T17:31:14.733001",
+      "updated_at": "2026-03-01T09:30:25.658403",
       "baseline_folder": "221.2",
       "files": [
         "CriticalHit/D_CriticalHitSetup.json"
       ]
     },
     "storage-increase": {
-      "updated_at": "2026-02-28T17:31:16.107856",
+      "updated_at": "2026-03-01T09:14:37.945689",
       "baseline_folder": "221.2",
       "files": [
         "Alterations/D_Alterations.json"

@@ -377,17 +377,28 @@ def parse_readme_metadata(mod_slug: str) -> tuple[dict[str, str] | None, str | N
     except OSError as exc:
         return None, f"Could not read {readme_file}: {exc}"
 
-    pattern = re.compile(
-        r"\*\*(?P<key>[^*]+)\*\*:\s*(?P<value>.*?)(?=\s*\*\*[^*]+\*\*:|\Z)",
-        re.DOTALL,
-    )
+    header_match = re.search(r"^##\s+", content, re.MULTILINE)
+    metadata_block = content if header_match is None else content[: header_match.start()]
 
     fields: dict[str, str] = {}
-    for match in pattern.finditer(content):
-        raw_key = match.group("key").strip().lower()
-        raw_value = match.group("value").strip()
-        if raw_value.startswith("`") and raw_value.endswith("`") and len(raw_value) >= 2:
-            raw_value = raw_value[1:-1].strip()
+    for line in metadata_block.splitlines():
+        stripped = line.strip()
+        if not stripped.startswith("**"):
+            continue
+
+        key_end = stripped.find("**:")
+        if key_end < 2:
+            continue
+
+        raw_key = stripped[2:key_end].strip().lower()
+        raw_value = stripped[key_end + 3 :].strip()
+
+        if raw_value.startswith("`"):
+            raw_value = raw_value[1:]
+        if raw_value.endswith("`"):
+            raw_value = raw_value[:-1]
+
+        raw_value = raw_value.strip()
         fields[raw_key] = raw_value
 
     missing = [field for field in README_REQUIRED_FIELDS if field not in fields]
@@ -532,7 +543,7 @@ def build_exmod_payload(
         "author": author,
         "version": readme_fields["version"],
         "week": readme_fields["week compatibility"],
-        "fileName": f"{mod_slug}.pak",
+        "fileName": f"{mod_slug}",
         "imageURL": readme_fields["image url"],
         "readmeURL": readme_fields["readme url"],
         "description": readme_fields["description"],
@@ -568,7 +579,7 @@ def upsert_exmodz_for_mod(
                 source_file = mod_data_root / relative_path
                 if not source_file.exists():
                     return False, f"Required EXMODZ asset is missing: {source_file}"
-                archive.write(source_file, arcname=f"{mod_slug}/{relative_path}")
+                archive.write(source_file, arcname=f"{mod_slug}/data/{relative_path}")
     except OSError as exc:
         return False, f"Failed to write EXMODZ archive {exmodz_file}: {exc}"
 
