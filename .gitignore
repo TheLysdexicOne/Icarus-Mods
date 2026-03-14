@@ -22,8 +22,6 @@ Desktop.ini
 # Log files
 *.log
 
-# Unreal Pak
-UnrealPak
 .icarus-data
 
 # Compiled and archive files
