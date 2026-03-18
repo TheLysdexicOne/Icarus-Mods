@@ -100,7 +100,9 @@ def ensure_crafting_speed(row: dict, stat_key: str, stat_value: int) -> tuple[di
     return updated_row, True
 
 
-def update_rows(payload: object, target_tag: str, stat_key: str, stat_value: int) -> tuple[int, int]:
+def update_rows(
+    payload: object, target_tag: str, stat_key: str, stat_value: int
+) -> tuple[int, int]:
     """Update matching rows in a DataTable payload.
 
     Returns:
