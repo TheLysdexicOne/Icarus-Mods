@@ -1,18 +1,6 @@
 {
   "mods": [
     {
-      "name": "Lysdexic's Bench Speed - 200",
-      "author": "TheLysdexicOne",
-      "version": "1.0",
-      "compatibility": "All",
-      "description": "Gives all \"Item.Bench\" Items a +200 on Base Crafting Speed %",
-      "files": {
-        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/crafting-speed-200.EXMODZ"
-      },
-      "imageURL": "",
-      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/crafting-speed-200/README.md"
-    },
-    {
       "name": "Lysdexic's Fast Foliage Harvest",
       "author": "TheLysdexicOne",
       "version": "1.0",
