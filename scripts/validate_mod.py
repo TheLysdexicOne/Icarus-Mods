@@ -8,6 +8,7 @@ for review, and only replaces the source file after explicit user confirmation.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import os
 import re
@@ -26,6 +27,7 @@ DATA_ROOT_DIR = ROOT_DIR / ".icarus-data"
 METADATA_FILE = ROOT_DIR / "metadata.json"
 MODS_EXMODZ_DIR = ROOT_DIR / "mods-exmodz"
 PRESERVED_TOP_LEVEL_KEYS = ("RowStruct", "Defaults", "GenerateEnum")
+FULL_ROW_EXMOD_PATHS = frozenset({"Items/D_ItemsStatic.json"})
 README_REQUIRED_FIELDS = (
     "name",
     "mod_slug",
@@ -104,7 +106,31 @@ def is_rows_list(value: object) -> bool:
     return True
 
 
-def diff_rows(mod_rows: list, base_rows: list) -> object:
+def should_preserve_full_rows(relative_path: str | None) -> bool:
+    """Return True when changed rows must remain fully expanded in mod output."""
+    if relative_path is None:
+        return False
+    return relative_path.replace("\\", "/") in FULL_ROW_EXMOD_PATHS
+
+
+def apply_mod_to_baseline(mod_value: object, base_value: object) -> object:
+    """Merge a mod value onto the baseline value."""
+    if isinstance(mod_value, dict) and isinstance(base_value, dict):
+        patched = copy.deepcopy(base_value)
+        for key, mod_nested_value in mod_value.items():
+            if key in base_value:
+                patched[key] = apply_mod_to_baseline(mod_nested_value, base_value[key])
+            else:
+                patched[key] = copy.deepcopy(mod_nested_value)
+        return patched
+
+    if isinstance(mod_value, list):
+        return copy.deepcopy(mod_value)
+
+    return copy.deepcopy(mod_value)
+
+
+def diff_rows(mod_rows: list, base_rows: list, *, preserve_full_rows: bool = False) -> object:
     """Compute minimized row-level diff keyed by Name."""
     if not is_rows_list(mod_rows) or not is_rows_list(base_rows):
         if mod_rows == base_rows:
@@ -132,6 +158,12 @@ def diff_rows(mod_rows: list, base_rows: list) -> object:
             minimized_rows.append(row)
             continue
 
+        if preserve_full_rows:
+            merged_row = apply_mod_to_baseline(row, base_row)
+            if isinstance(merged_row, dict) and merged_row != base_row:
+                minimized_rows.append(merged_row)
+            continue
+
         row_diff = diff_dict(row, base_row)
         if row_diff is NO_CHANGE:
             continue
@@ -154,14 +186,24 @@ def diff_rows(mod_rows: list, base_rows: list) -> object:
     return minimized_rows
 
 
-def diff_value(mod_value: object, base_value: object, key: str | None = None) -> object:
+def diff_value(
+    mod_value: object,
+    base_value: object,
+    key: str | None = None,
+    *,
+    relative_path: str | None = None,
+) -> object:
     """Return minimized diff payload or NO_CHANGE sentinel."""
     if isinstance(mod_value, dict) and isinstance(base_value, dict):
-        return diff_dict(mod_value, base_value)
+        return diff_dict(mod_value, base_value, relative_path=relative_path)
 
     if isinstance(mod_value, list) and isinstance(base_value, list):
         if key == "Rows":
-            return diff_rows(mod_value, base_value)
+            return diff_rows(
+                mod_value,
+                base_value,
+                preserve_full_rows=should_preserve_full_rows(relative_path),
+            )
         if mod_value == base_value:
             return NO_CHANGE
         return mod_value
@@ -172,7 +214,7 @@ def diff_value(mod_value: object, base_value: object, key: str | None = None) ->
     return mod_value
 
 
-def diff_dict(mod_obj: dict, base_obj: dict) -> object:
+def diff_dict(mod_obj: dict, base_obj: dict, *, relative_path: str | None = None) -> object:
     """Compute minimized dictionary diff."""
     diff_payload: dict = {}
 
@@ -181,7 +223,7 @@ def diff_dict(mod_obj: dict, base_obj: dict) -> object:
             diff_payload[key] = mod_value
             continue
 
-        result = diff_value(mod_value, base_obj[key], key=key)
+        result = diff_value(mod_value, base_obj[key], key=key, relative_path=relative_path)
         if result is not NO_CHANGE:
             diff_payload[key] = result
 
@@ -191,9 +233,14 @@ def diff_dict(mod_obj: dict, base_obj: dict) -> object:
     return diff_payload
 
 
-def build_minimized_payload(mod_data: object, baseline_data: object) -> tuple[object | None, bool]:
+def build_minimized_payload(
+    mod_data: object,
+    baseline_data: object,
+    *,
+    relative_path: str | None = None,
+) -> tuple[object | None, bool]:
     """Build final minimized output payload and report changed status."""
-    diff_payload = diff_value(mod_data, baseline_data)
+    diff_payload = diff_value(mod_data, baseline_data, relative_path=relative_path)
     if diff_payload is NO_CHANGE:
         return None, False
 
@@ -478,7 +525,11 @@ def build_exmod_rows(
         if baseline_error:
             return None, baseline_error
 
-        minimized_payload, is_changed = build_minimized_payload(mod_data, baseline_data)
+        minimized_payload, is_changed = build_minimized_payload(
+            mod_data,
+            baseline_data,
+            relative_path=relative_path,
+        )
         if not is_changed or minimized_payload is None:
             continue
 
@@ -612,7 +663,12 @@ def ask_review_decision(relative_path: str) -> str:
         print("Please enter 'y', 'n', or 'q'.")
 
 
-def validate_reviewed_sidecar(sidecar_file: Path, baseline_data: object) -> tuple[bool, str | None]:
+def validate_reviewed_sidecar(
+    sidecar_file: Path,
+    baseline_data: object,
+    *,
+    relative_path: str,
+) -> tuple[bool, str | None]:
     """Validate manually edited sidecar before replacement.
 
     Ensures JSON is valid and still represents changed content versus baseline.
@@ -621,7 +677,11 @@ def validate_reviewed_sidecar(sidecar_file: Path, baseline_data: object) -> tupl
     if reviewed_error:
         return False, reviewed_error
 
-    _, has_changes = build_minimized_payload(reviewed_data, baseline_data)
+    _, has_changes = build_minimized_payload(
+        reviewed_data,
+        baseline_data,
+        relative_path=relative_path,
+    )
     if not has_changes:
         return (
             False,
@@ -733,7 +793,11 @@ def validate_single_mod(
             skipped_or_error_files += 1
             continue
 
-        minimized_payload, is_changed = build_minimized_payload(mod_data, baseline_data)
+        minimized_payload, is_changed = build_minimized_payload(
+            mod_data,
+            baseline_data,
+            relative_path=relative_path,
+        )
         if not is_changed or minimized_payload is None:
             print(f"  - Unchanged: {relative_path}")
             continue
@@ -747,7 +811,11 @@ def validate_single_mod(
             continue
 
         if no_prompt:
-            is_valid_sidecar, sidecar_error = validate_reviewed_sidecar(sidecar_file, baseline_data)
+            is_valid_sidecar, sidecar_error = validate_reviewed_sidecar(
+                sidecar_file,
+                baseline_data,
+                relative_path=relative_path,
+            )
             if not is_valid_sidecar:
                 print(f"  - Skipped (error): {sidecar_error}")
                 skipped_or_error_files += 1
@@ -784,6 +852,7 @@ def validate_single_mod(
             is_valid_sidecar, sidecar_error = validate_reviewed_sidecar(
                 sidecar_file,
                 baseline_data,
+                relative_path=relative_path,
             )
             if not is_valid_sidecar:
                 print(f"    Sidecar failed revalidation: {sidecar_error}")

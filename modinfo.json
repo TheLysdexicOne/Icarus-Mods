@@ -1,6 +1,30 @@
 {
   "mods": [
     {
+      "name": "Lysdexic's Crafting Time - Half",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "compatibility": "All",
+      "description": "Halves all crafting recipes. Adds some bulk recipes.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/crafting-time-half.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/crafting-speed-200/README.md"
+    },
+    {
+      "name": "Lysdexic's Crafting Time - Quarter",
+      "author": "TheLysdexicOne",
+      "version": "1.0",
+      "compatibility": "All",
+      "description": "Quarters all crafting recipes. Adds some bulk recipes.",
+      "files": {
+        "exmodz": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods-exmodz/crafting-time-quarter.EXMODZ"
+      },
+      "imageURL": "",
+      "readmeURL": "https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/crafting-speed-200/README.md"
+    },
+    {
       "name": "Lysdexic's Fast Foliage Harvest",
       "author": "TheLysdexicOne",
       "version": "1.0",

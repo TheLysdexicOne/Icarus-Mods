@@ -177,146 +177,2500 @@
   "Rows": [
     {
       "Name": "Stone_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Stone_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Stone_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Stone_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "ToolDamage": {
+        "RowName": "Stone_Knife"
+      },
+      "Audio": {
+        "RowName": "Stone_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Bone_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Bone_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Bone_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Bone_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "ToolDamage": {
+        "RowName": "Bone_Knife"
+      },
+      "Audio": {
+        "RowName": "Bone_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Metal_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Metal_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Metal_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Metal_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Metal_Knife"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Combat_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Combat_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Combat_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Combat_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Combat_Knife"
+      },
+      "Audio": {
+        "RowName": "Combat_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Meta_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife"
+      },
+      "Audio": {
+        "RowName": "Combat_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "FieldGuide.BlackList"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "FieldGuide.BlackList"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Taxidermy_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Taxidermy_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Taxidermy_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Taxidermy_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Stone_Knife"
+      },
+      "Audio": {
+        "RowName": "Stone_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseChanceToHarvestCreatureTrophiesOnSkinning_%\")": 100,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Harvest.Knife.Trophy"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Harvest.Knife.Trophy"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Titanium_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Titanium_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Titanium_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Titanium_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Titanium_Knife"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Platinum_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Platinum_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Platinum_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Platinum_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Platinum_Knife"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Steel_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Steel_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Steel_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Steel_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Steel_Knife"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Sandworm_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Sandworm_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Sandworm_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Sandworm_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Sandworm_Knife"
+      },
+      "Audio": {
+        "RowName": "Bone_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseAttacksCauseWound_%\")": 100,
+        "(Value=\"IsSandwormItem_?\")": 1,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Caveworm_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Caveworm_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Caveworm_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Caveworm_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Caveworm_Knife"
+      },
+      "Audio": {
+        "RowName": "Bone_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseAttacksCausePoison_%\")": 100,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Shengong_Alpha",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Shengong"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Shengong_Alpha"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Shengong"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
-        "(Value=\"BaseSkinningSpeed_+%\")": 500
+        "(Value=\"BaseSkinningRewards_+%\")": 15,
+        "(Value=\"BaseSkinningSpeed_+%\")": 500,
+        "(Value=\"BaseToolStaminaActionCost_+%\")": 10
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Shengong_Beta",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Shengong_Beta"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Shengong_Beta"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Shengong"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseItemWear_+%\")": -10,
+        "(Value=\"BaseToolStaminaActionCost_+%\")": 10,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Shengong_Charlie",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Shengong_Charlie"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Shengong_Charlie"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Shengong"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseMeleeDamage_+%\")": 10,
+        "(Value=\"BaseStealthThreatModifier_+%\")": 25,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Shengong_Delta",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Shengong_Delta"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Shengong_Delta"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Shengong"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseMeleeDamage_+%\")": 10,
+        "(Value=\"BaseSkinningRewards_+%\")": 15,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Shengong_Echo",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Shengong_Echo"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Shengong_Echo"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Shengong"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong_Echo"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseElectricDamage_+\")": 50,
+        "(Value=\"BaseAttacksCauseElectroshock_%\")": 15,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
       }
     },
     {
       "Name": "Meta_Knife_Printed",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Printed"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Printed"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Printed"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Printed"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
       "AdditionalStats": {
         "(Value=\"BaseSkinningSpeed_+%\")": 500
       }
     },
     {
       "Name": "Meta_Knife_Inaris_Alpha",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Inaris_Alpha"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Inaris_Alpha"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Inaris"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Inaris"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseWoundResistance_%\")": 100,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Meta_Knife_Inaris_Bravo",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Inaris_Bravo"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Inaris_Bravo"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Inaris"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong_Echo"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BasePoisonDamage_+\")": 50,
+        "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+        "(Value=\"BaseSkinningRewards_%\")": -50,
+        "(Value=\"BaseAcidicGlandsPerSkinnedResource_%\")": 10,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
       }
     },
     {
       "Name": "Meta_Knife_Inaris_Charlie",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Inaris_Charlie"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Inaris_Charlie"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Inaris"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong_Echo"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseFireDamage_+\")": 50,
+        "(Value=\"BaseAttacksCauseBurn_%\")": 15,
+        "(Value=\"BaseSkinningCookChance_%\")": 10,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
       }
     },
     {
       "Name": "Meta_Knife_Inaris_Delta",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Inaris_Delta"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Inaris_Delta"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Inaris"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Shengong_Echo"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseFrostDamage_+\")": 50,
+        "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
+        "(Value=\"BaseChilledAlterationChance_%\")": 30,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
       }
     },
     {
       "Name": "Meta_Knife_Larkwell",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Larkwell"
+      },
+      "Itemable": {
+        "RowName": "Item_Meta_Knife_Larkwell"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Meta_Item_Larkwell"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Larkwell"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseAttackSpeed_+%\")": 10,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Mission_Knife_Lion",
+      "Meshable": {
+        "RowName": "Mesh_Meta_Knife_Larkwell"
+      },
+      "Itemable": {
+        "RowName": "Mission_Knife_Lion"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Mission_Knife_Lion"
+      },
+      "Decayable": {
+        "RowName": "Decay_MetaItem"
+      },
+      "ToolDamage": {
+        "RowName": "Meta_Knife_Larkwell"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BasePrimeMeatDropChance_%\")": 400,
+        "(Value=\"IsInvolvedInQuest_?\")": 1,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "FactionMission.Item"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Meta"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "FactionMission.Item"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
       }
     },
     {
       "Name": "Black_Wolf_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Black_Wolf_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Black_Wolf_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Black_Wolf_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Blackwolf_Knife"
+      },
+      "Audio": {
+        "RowName": "Bone_Knife"
+      },
       "AdditionalStats": {
+        "(Value=\"BaseAttacksCauseMinorHemorrhage_%\")": 25,
+        "(Value=\"IsBlackWolfItem_?\")": 1,
         "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      }
+    },
+    {
+      "Name": "Obsidian_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Obsidian_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Obsidian_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Obsidian"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Obsidian_Knife"
+      },
+      "Audio": {
+        "RowName": "Obsidian_Knife"
+      },
+      "AdditionalStats": {
+        "(Value=\"BaseFireDamage_+\")": 30,
+        "(Value=\"BaseAttacksCauseBurn_%\")": 15,
+        "(Value=\"BaseSkinningCookChance_%\")": 10,
+        "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
+      }
+    },
+    {
+      "Name": "Cold_Steel_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Cold_Steel_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Cold_Steel_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Cold_Steel"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Cold_Steel_Knife"
+      },
+      "Audio": {
+        "RowName": "Metal_Knife"
+      },
+      "AdditionalStats": {
+        "(Value=\"BaseFrostDamage_+\")": 35,
+        "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
+        "(Value=\"BaseChilledAlterationChance_%\")": 30,
+        "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
+      }
+    },
+    {
+      "Name": "Iron_Wood_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Iron_Wood_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Iron_Wood_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Durable": {
+        "RowName": "Iron_Wood"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Iron_Wood_Knife"
+      },
+      "Audio": {
+        "RowName": "Machete"
+      },
+      "AdditionalStats": {
+        "(Value=\"BasePoisonDamage_+\")": 40,
+        "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+        "(Value=\"BaseSkinningRewards_%\")": -50,
+        "(Value=\"BaseAcidicGlandsPerSkinnedResource_%\")": 10,
+        "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "NewFrontiers"
+        }
+      }
+    },
+    {
+      "Name": "Lithium_Knife",
+      "Meshable": {
+        "RowName": "Mesh_Lithium_Knife"
+      },
+      "Itemable": {
+        "RowName": "Item_Lithium_Knife"
+      },
+      "Interactable": {
+        "RowName": "Item"
+      },
+      "Focusable": {
+        "RowName": "Focusable_1HKnife"
+      },
+      "Highlightable": {
+        "RowName": "Generic"
+      },
+      "Actionable": {
+        "RowName": "1H_Knife_Electric"
+      },
+      "Usable": {
+        "RowName": "Repair"
+      },
+      "Fillable": {
+        "RowName": "Lithium_Tools"
+      },
+      "Durable": {
+        "RowName": "Lithium_Knife"
+      },
+      "Decayable": {
+        "RowName": "Decay_02_Minutes"
+      },
+      "InventoryContainer": {
+        "RowName": "Knife_Attachment"
+      },
+      "ToolDamage": {
+        "RowName": "Lithium_Knife"
+      },
+      "Audio": {
+        "RowName": "lithiumKnife"
+      },
+      "AdditionalStats": {
+        "(Value=\"ChargedModifier_Enum\")": 1,
+        "(Value=\"BaseChargeConsumedPerAction_+\")": 100,
+        "(Value=\"BaseChargeConsumedPerItemGenerated_+\")": 25,
+        "(Value=\"BaseSkinningSpeed_+%\")": 500
+      },
+      "Manual_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Powered.Battery"
+          },
+          {
+            "TagName": "Item.Powered.Toggle"
+          },
+          {
+            "TagName": "Item.Lithium"
+          }
+        ]
+      },
+      "Generated_Tags": {
+        "GameplayTags": [
+          {
+            "TagName": "Item.Tool.Knife.T2"
+          },
+          {
+            "TagName": "Item.Tool.Knife.T1"
+          },
+          {
+            "TagName": "Item.Powered.Battery"
+          },
+          {
+            "TagName": "Item.Powered.Toggle"
+          },
+          {
+            "TagName": "Item.Lithium"
+          },
+          {
+            "TagName": "Traits.Meshable"
+          },
+          {
+            "TagName": "Traits.Itemable"
+          },
+          {
+            "TagName": "Traits.Interactable"
+          },
+          {
+            "TagName": "Traits.Highlightable"
+          },
+          {
+            "TagName": "Traits.Actionable"
+          },
+          {
+            "TagName": "Traits.Usable"
+          },
+          {
+            "TagName": "Traits.Fillable"
+          },
+          {
+            "TagName": "Traits.Durable"
+          }
+        ],
+        "ParentTags": []
+      },
+      "Metadata": {
+        "RequiredFeatureLevel": {
+          "RowName": "DangerousHorizons"
+        }
       }
     }
   ]

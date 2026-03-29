@@ -6,8 +6,8 @@
 **Version**: 1.0
 **Description**: This mod is an attempt to lessen the time spent watching the killcam. Sometimes when a creature falls weirdly, the kill cam can last up to 4.5 seconds before releasing control back to the player. This mod tries to reduce that to 1 second.
 **Date Created**: `2026-02-27 21:30:00 EST`
-**Date Updated**: `2026-03-14 10:03:37 EST`
-**Week Compatibility**: `223`
+**Date Updated**: `2026-03-29 09:59:24 EST`
+**Week Compatibility**: `225`
 **Image URL**:
 **Readme URL**: `https://raw.githubusercontent.com/TheLysdexicOne/Icarus-Mods/main/mods/max-killcam-time/README.md`
 
